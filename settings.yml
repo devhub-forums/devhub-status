@@ -1,0 +1,23 @@
+failed_status_test:
+   type: bool
+   default: false
+   description: "Turn this on if you want to test for status page failures!"
+test_status_message:
+   type: string
+   default: "One of our systems is down, down, down! :("
+   description: "The message to display during a active outage/failure!"
+test_status_indicator:
+   type: enum
+   default: "mirror"
+   description: "The indicator to use during a active outage/failure!"
+   choices:
+     - "undermaintenance"
+     - "hasissues"
+has_issues_message:
+   type: string
+   default: "Whoops, we're experiencing some issues, but don't worry we're working on fixing them!"
+   description: "The message to display when the system has issues!"
+under_maintenance_message:
+   type: string
+   default: "We're currently performing maintenance on our systems, users may experience some issues during this time!"
+   description: "The message to display when the system is under maintenance!"
